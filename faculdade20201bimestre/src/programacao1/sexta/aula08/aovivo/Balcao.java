@@ -71,12 +71,6 @@ public class Balcao {
 			
 			this.cont.adicionarVeiculo(bike);
 			
-			
-			
-			
-			
-			
-
 			break;
 		case 3:
 			System.out.println("Adicionar Patinete");
@@ -88,6 +82,9 @@ public class Balcao {
 			break;
 		case 7:
 			System.out.println("Encerrar vigencia Contrato");
+			double  tot = this.cont.fecharContrato();
+			System.out.println("Pagará por: " + tot);
+			
 			break;
 		case 9:
 			System.out.println("Encerrar aplicação");
