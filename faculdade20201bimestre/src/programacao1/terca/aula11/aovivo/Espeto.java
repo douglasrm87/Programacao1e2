@@ -9,8 +9,8 @@ public class Espeto extends Prato {
 	
 	public Espeto() {
 		super();
-		int q = getNumeroPedido();
-		setNumeroPedido(q++);
+		
+		setIdPedido(Prato.numeroPedidoGeral);
 	}
 	public int getQdadeTpCarne() {
 		return qdadeTpCarne;

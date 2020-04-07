@@ -6,8 +6,7 @@ public class Marmita extends Prato {
 	
 	public Marmita() {
 		super();
-		int q = getNumeroPedido();
-		setNumeroPedido(q++);
+		setIdPedido(Prato.numeroPedidoGeral);
 	}
 	
 	@Override

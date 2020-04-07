@@ -45,6 +45,9 @@ public class Caixa {
 				Marmita mar = new Marmita();
 				mar.setNomeGarcom(this.nomeGarcom);
 				mar.setTipomarmita(tp);
+				
+				mar.setPreco(this.preco); // faltou esta linha
+				
 				ped.registrarPrato(mar);
 				break;
 			case 2:
@@ -60,7 +63,7 @@ public class Caixa {
 				}
 				buf.setNomeGarcom(this.nomeGarcom);
 				buf.setPrecoKg(this.preco);
-				
+				buf.setPreco(this.preco); // faltou esta linha
 				ped.registrarPrato(buf);
 				
 				

@@ -6,8 +6,8 @@ public class Buffet extends Prato {
 
 	public Buffet() {
 		super();
-		int q = getNumeroPedido();
-		setNumeroPedido(q++);
+		
+		setIdPedido(Prato.numeroPedidoGeral);
 	}
 
 	public double getPrecoKg() {

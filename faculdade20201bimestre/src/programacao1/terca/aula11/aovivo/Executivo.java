@@ -5,8 +5,8 @@ public class Executivo extends Prato {
 
 	public Executivo() {
 		super();
-		int q = getNumeroPedido();
-		setNumeroPedido(q++);
+		
+		setIdPedido(Prato.numeroPedidoGeral);
 	}
 	
 	public double getPesoRefeicao() {
