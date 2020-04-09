@@ -24,7 +24,7 @@ public class JogoGenius {
 	protected static JToggleButton botaoAzul = null;
 	protected static JToggleButton botaoVermelho = null;
 	protected static JToggleButton botaoLaranja = null;
-	protected static List<ComputadorDTO> jogadasComputador = new ArrayList();
+	protected static List<ComputadorDTO> jogadasComputador = new ArrayList<>();
 	JButton computador = null;// esta
 	protected static final int _1000 = 200;
 	protected static final int _10 = 3;
