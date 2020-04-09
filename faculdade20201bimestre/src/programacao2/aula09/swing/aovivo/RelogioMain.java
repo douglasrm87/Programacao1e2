@@ -21,10 +21,11 @@ public class RelogioMain extends JFrame {
 		this.panel = new JPanel();
 		this.hora = new JTextField("");
 		this.botaoIniciar = new JButton("Iniciar");
+		// Classe Anônima
 		this.botaoIniciar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Relogio relogio = new Relogio(hora);
-				relogio.start();
+				relogio.start(); // iniciando a thread.
 			}
 		});
 		this.panel.add(this.hora);
