@@ -7,6 +7,13 @@ public class Camera {
 	private int volume = 10;
 	private boolean estaLigada = false;
 
+	
+	
+	@Override
+	public String toString() {
+		return "Camera [canal=" + this.canal + ", volume=" + this.volume + ", estaLigada=" + this.estaLigada + "]";
+	}
+
 	public void setarCanal(int novoCanal) {
 		if (novoCanal >= 1 && novoCanal <= 99) {
 			this.canal = novoCanal;
@@ -50,4 +57,5 @@ public class Camera {
 		this.estaLigada = true;
 	}
 
+	
 }
