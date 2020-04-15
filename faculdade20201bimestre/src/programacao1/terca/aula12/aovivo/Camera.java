@@ -7,8 +7,6 @@ public class Camera {
 	private int volume = 10;
 	private boolean estaLigada = false;
 
-	
-	
 	@Override
 	public String toString() {
 		return "Camera [canal=" + this.canal + ", volume=" + this.volume + ", estaLigada=" + this.estaLigada + "]";
@@ -17,8 +15,9 @@ public class Camera {
 	public void setarCanal(int novoCanal) {
 		if (novoCanal >= 1 && novoCanal <= 99) {
 			this.canal = novoCanal;
+		} else {
+			throw new IllegalArgumentException("Canal Recebido fora do limite - 1...99");
 		}
-		throw new IllegalArgumentException("Canal Recebido fora do limite - 1...99");
 
 	}
 
@@ -57,5 +56,4 @@ public class Camera {
 		this.estaLigada = true;
 	}
 
-	
 }
