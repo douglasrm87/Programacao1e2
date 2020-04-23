@@ -31,11 +31,11 @@ public class ExemploListaConjuntoString {
 		}
 		System.out.println("\nOrdenado");
 		SortedSet<String> strOrdenada = new TreeSet<>();
+		strOrdenada.add("Banana");
 		strOrdenada.add("banana");
-		strOrdenada.add("banana");
-		strOrdenada.add("abacate");
-		strOrdenada.add("uva");
-		strOrdenada.add("morango");
+		strOrdenada.add("Abacate");
+		strOrdenada.add("Uva");
+		strOrdenada.add("Morango");
 		strOrdenada.add("Pitaya");
 		strOrdenada.add("Manga");
 		
