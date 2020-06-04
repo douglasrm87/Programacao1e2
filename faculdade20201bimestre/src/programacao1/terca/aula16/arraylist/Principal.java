@@ -7,8 +7,9 @@ public class Principal {
 	public static void main(String[] args) {
 		new Principal().processar();
 	}
-
+	int atributo = 110;
 	public void processar() {
+		System.out.println("atributo: " + atributo);
 //		List<ItemPedido> - Generics ou Tipos PArametrizados.s
 		List<ItemPedido> listaItens = new ArrayList<>();
 		ItemPedido item = new ItemPedido("sapato", 10);
