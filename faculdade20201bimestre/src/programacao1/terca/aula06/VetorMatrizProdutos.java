@@ -5,10 +5,14 @@ public class VetorMatrizProdutos {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		final int TAMMAT = 2;
-		final int TAMVET = 6;
+		// ira representar a prateleira
 		int prateleira[][] = new int[TAMMAT][TAMMAT];
+		
+		final int TAMVET = 6; // vai conter os produtos
+		
 		String produtos[] = { "vazio", "xampu", "condicionador",
 				"hidratante", "tintura", "demaquilante", };
+		
 		System.out.println("0 " + produtos[0]);
 		System.out.println("1 " + produtos[1]);
 		System.out.println("2 " + produtos[2]);
@@ -19,12 +23,12 @@ public class VetorMatrizProdutos {
 		/*Resposta questão A)
 		 */
 		// Carregar a matriz
-		for (int i = 0; i < TAMMAT; i++) {
-			for (int j = 0; j < TAMMAT; j++) {
+		for (int i = 0; i < TAMMAT; i++) { // linha
+			for (int j = 0; j < TAMMAT; j++) { // coluna
 				int cdProd = 0;
 				do {
 					System.out
-							.println("Digite o código dos produtos a ser armazena na posição [" + i + "][" + j + "]: ");
+							.println("Digite o código do produto a ser armazenado na posição [" + i + "][" + j + "]: ");
 					cdProd = leia.nextInt();
 					if (cdProd < 0 || cdProd > produtos.length) {
 						System.out.println("Código inválido. Redigite.");
@@ -40,12 +44,15 @@ public class VetorMatrizProdutos {
 				System.out.println("Produto comprado: [" + i + "][" + j + "]: " + produtos[prateleira[i][j]]);
 			}
 		}
+
 		/* Resposta questão b)
 		 */
+		// Contagem de Estoque
 		System.out.println("\n Quantidade comprada:");
 		int produtosContagem[] = new int[TAMVET];
 		for (int i = 0; i < TAMMAT; i++) {
 			for (int j = 0; j < TAMMAT; j++) {
+				// O ponto central da questão e a seguinte linha
 				produtosContagem[prateleira[i][j]]++;
 			}
 		}

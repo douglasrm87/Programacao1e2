@@ -1,7 +1,5 @@
 package programacao1.sexta.aula02;
 
-
-
 /*
  * Exercícios 28/02/2020.
  * Utilizar a ferramenta de debug do Eclipse para auxiliar em parte dos exercícios.
@@ -23,11 +21,14 @@ package programacao1.sexta.aula02;
 Apresentar os pontos de melhorias no programa
  */
 import java.util.Scanner;
+
 public class AvaliacaoEstacio {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
-		double av1 = 0.0;		double av2 = 0.0;
-		double av3 = 0.0;		double avr = 0.0;
+		double av1 = 0.0;
+		double av2 = 0.0;
+		double av3 = 0.0;
+		double avr = 0.0;
 		double media = 0.0;
 		System.out.println("Digite a nota AV1:");
 		av1 = leia.nextDouble();
